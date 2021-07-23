@@ -1,0 +1,31 @@
+/* .carousel-item area start */
+.orange{
+    background-color: #feeae9;
+    border-radius: 10px;
+}
+.carousel-item{
+    padding: 20px 40px;
+}
+@media (max-width: 500px) { 
+    .carousel-item .col-7 p{
+        display: none;
+    }
+    .carousel-item .col-7 h1, h2{
+        font-size: medium;
+    }
+    .carousel-item .col-7 .btn{
+        padding: 0px 5px;
+
+    }
+ }
+/* .carousel-item area End */
+.input-box{
+    margin-left: 10px;
+    width: 60%;
+    padding: 0px 10px;
+}
+.fa-search{
+    margin-top: 15px;
+    color: black;
+}
+
