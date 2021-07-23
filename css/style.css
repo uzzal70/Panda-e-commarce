@@ -28,8 +28,11 @@
     margin-top: 15px;
     color: black;
 }
-.input-box{
+.input-box1{
     border: none;
     padding: 6px;
 }
 
+body{
+    background-color: rgb(170, 175, 175);
+}
