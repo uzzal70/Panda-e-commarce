@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
@@ -41,88 +41,92 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
-                        <li class="nav-item search">
-                            <input type="text" placeholder="search" class="input-box">
-                            <a href=""><i class="fas fa-search"></i></a>
-                        </li>
-
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
     <!-- navbar section end -->
+    <section class="mt-4">
 
-    <main>
+    </section>
+    <main class="mt-4">
         <!-- slider section start-->
-        <div class="container">
-            <div id="carouselExampleControls" class="carousel slide orange mt-5" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-7 col-7">
-                                <h1>Cool Dude Headphone</h1>
-                                <p>This is the best headphone in the world cool dude headphone west your time in fornt
-                                    of
-                                    lucky
-                                    headphone.</p>
-                                <h2 class="text-danger">$420</h2>
-                                <button type="button" class="px-3 btn btn-warning">Buy Now</button>
+        <section id="home">
+            <div class="container mt-5">
+                <div id="carouselExampleControls" class="carousel slide orange" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-7 col-7">
+                                    <h1>Cool Dude Headphone</h1>
+                                    <p>This is the best headphone in the world cool dude headphone west your time in
+                                        fornt
+                                        of
+                                        lucky
+                                        headphone.</p>
+                                    <h2 class="text-danger">$420</h2>
+                                    <button type="button" class="px-3 btn btn-warning">Buy Now</button>
+                                </div>
+                                <div class="col-md-5 col-5">
+                                    <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                                </div>
                             </div>
-                            <div class="col-md-5 col-5">
-                                <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-7 col-7">
+                                    <h1>Samsung TV</h1>
+                                    <p>This is the best Samsung TV in the world Samsung TV west your time in fornt
+                                        of
+                                        lucky
+                                        headphone.</p>
+                                    <h2 class="text-danger">$720</h2>
+                                    <button type="button" class="px-3 btn btn-warning">Buy Now</button>
+                                </div>
+                                <div class="col-md-5 col-5">
+                                    <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-7 col-7">
+                                    <h1>Gamming Keyboard</h1>
+                                    <p>This is the best Gamming Keyboard in the world Gamming Keyboard west your time in
+                                        fornt
+                                        of
+                                        lucky
+                                        headphone.</p>
+                                    <h2 class="text-danger">$1220</h2>
+                                    <button type="button" class="px-3 btn btn-warning">Buy Now</button>
+                                </div>
+                                <div class="col-md-5 col-5">
+                                    <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-7 col-7">
-                                <h1>Samsung TV</h1>
-                                <p>This is the best Samsung TV in the world Samsung TV west your time in fornt
-                                    of
-                                    lucky
-                                    headphone.</p>
-                                <h2 class="text-danger">$720</h2>
-                                <button type="button" class="px-3 btn btn-warning">Buy Now</button>
-                            </div>
-                            <div class="col-md-5 col-5">
-                                <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-7 col-7">
-                                <h1>Gamming Keyboard</h1>
-                                <p>This is the best Gamming Keyboard in the world Gamming Keyboard west your time in
-                                    fornt
-                                    of
-                                    lucky
-                                    headphone.</p>
-                                <h2 class="text-danger">$1220</h2>
-                                <button type="button" class="px-3 btn btn-warning">Buy Now</button>
-                            </div>
-                            <div class="col-md-5 col-5">
-                                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
+        </section>
 
         <!-- Start of card area -->
-        <section class="container mt-5">
+        <section id="shoes" class="container mt-5">
             <div class="row gx-3 g-3">
                 <div class="col">
                     <div
@@ -135,7 +139,7 @@
                 <div class="col">
                     <div
                         class="p-2 rounded-3 d-flex justify-content-center align-items-center justify-content-around bg-secondary text-white">
-                        <h1>Watch</h1>
+                        <h1>Shoe</h1>
                         <img src="images/categories/shoes.png" alt="">
                     </div>
                 </div>
@@ -143,7 +147,7 @@
                 <div class="col">
                     <div
                         class="p-2 rounded-3 d-flex justify-content-center align-items-center justify-content-around bg-success text-white">
-                        <h1>Watch</h1>
+                        <h1>Bag</h1>
                         <img src="images/categories/bag.png" alt="">
                     </div>
                 </div>
@@ -151,7 +155,7 @@
         </section>
         <!-- End of card area -->
         <!-- Start of card section -->
-        <section class="container mt-5">
+        <section id="shoes" class="container mt-5">
             <h1>Lot of Top Shoe</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -198,7 +202,7 @@
         </section>
         <!-- End of shoe section -->
         <!-- start of bag section -->
-        <section class="container mt-5">
+        <section id="backpack" class="container mt-5">
             <h1>Lot of Top Bag</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -244,21 +248,87 @@
             </div>
         </section>
         <!-- End of card section -->
+
+        <!-- start of team section area  -->
+        <section id="team" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 pt-5 pb-2 ourTeam-hedding text-center m-auto">
+                        <h1>Our Team</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<strong> sed do eiusmod
+                                tempor incididunt </strong>ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row section-success ourTeam-box text-center">
+                            <div class="col-md-12 section1">
+                                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg">
+                            </div>
+                            <div class="col-md-12 section2 pb-3">
+                                <p>ANNA FLOWERS</p>
+                                <span>Designer of Panda Ltd.</span>
+                            </div>
+                            <div class="col-md-12 section3">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row section-success ourTeam-box text-center">
+                            <div class="col-md-12 section1">
+                                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg">
+                            </div>
+                            <div class="col-md-12 section2 pb-3">
+                                <p>NOEL FLANTIER</p>
+                                <span>Fashion of Panda Ltd.</span>
+                            </div>
+                            <div class="col-md-12 section3">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row section-success ourTeam-box text-center">
+                            <div class="col-md-12 section1">
+                                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg">
+                            </div>
+                            <div class="col-md-12 section2 pb-3">
+                                <p>JIM JONES</p>
+                                <span>CEO of Panda Ltd.</span>
+                            </div>
+                            <div class="col-md-12 section3">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of team section area  -->
     </main>
-    <footer class="container bg-info mt-5 d-flex justify-content-center p-5">
+
+    <footer id="subscribe" class="container mt-5 d-flex justify-content-center p-5">
         <div class="footer-area">
             <h1>LET'S STAY IN TOUCH</h1>
             <p>Get updates on sales, specials and more</p>
-            <input type="text" placeholder="Enter your email" class="rounded-3 input-box1">
-            <button type="submit" class="p5-5 btn btn-warning">SUBMIT</button>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="gmail.com" aria-label="mail">
+                <button type="submit" class="p-1 mt-1 btn btn-warning">SUBMIT</button>
+            </form>
         </div>
-
     </footer>
     <footer>
-        <h6 class="p-5 text-center"> 2021 &copy copyright</h6>
+        <h6 class="p-3 text-danger text-center"> 2021 &copy copyright</h6>
     </footer>
-
-
     <!-- Bootstarp js link -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
